@@ -12,7 +12,7 @@ module "cluster" {
     }
   }
 
-  vpc_id               = "var.variable"
+  vpc_id               = "module.vpc.vpc_id"
   db_subnet_group_name = "db-subnet-group"
   security_group_rules = {
     ex1_ingress = {
